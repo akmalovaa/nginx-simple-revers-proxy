@@ -1,6 +1,6 @@
 # Simple nginx revers proxy
 
-### Docker compose for installation on the cloud and testing external monitoring of the API server
+**Docker compose for installation on the cloud and testing external monitoring of the API server**
 
 Prepare VM cloud service
 
