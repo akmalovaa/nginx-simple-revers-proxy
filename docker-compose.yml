@@ -1,0 +1,14 @@
+version: '3.7'
+
+services:
+  reverse-proxy:
+    image: nginx:1.23.1
+    volumes:
+      - ./entrypoint.sh:/entrypoint.sh
+      - ./nginx-config.template:/config.template
+    ports:
+      - 80:80
+    environment:
+      - TARGET_URL='http://api.akmalov.com'
+    entrypoint: ["/entrypoint.sh"]
+    command: ["nginx", "-g", "daemon off;"]
