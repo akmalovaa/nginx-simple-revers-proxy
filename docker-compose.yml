@@ -9,6 +9,6 @@ services:
     ports:
       - 80:80
     environment:
-      - TARGET_URL='http://api.akmalov.com'
+      - TARGET_URL='https://api.akmalov.com'
     entrypoint: ["/entrypoint.sh"]
     command: ["nginx", "-g", "daemon off;"]
